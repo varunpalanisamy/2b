@@ -3,11 +3,9 @@ class GameScene extends Phaser.Scene {
     constructor() {
         super("GameScene");
 
-        // tuning constants
         this.PLAYER_SPEED = 250;
-        this.FIRE_RATE    = 400;  // ms between shots
+        this.FIRE_RATE    = 400; 
 
-        // game state
         this.lastFired = 0;
         this.health    = 3;
         this.score     = 0;
@@ -16,7 +14,6 @@ class GameScene extends Phaser.Scene {
     preload() {
         this.load.setPath("assets/");
 
-        // background
         this.load.image("bg1", "bg_layer1.png");
 
         // player
